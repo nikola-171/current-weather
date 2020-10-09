@@ -1,0 +1,68 @@
+﻿
+@{
+    ViewData["Title"] = "Vreme";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="display-4">Search city and get current weather forecast</h1>
+
+<div class="container" id="unos_grada">
+    <h5 class="h5"><i>City Name : </i></h5> <div class="form-group" id="unos">
+        <input class="form-control" id="txtCity" type="text" />
+    </div>
+    <button class="btn btn-secondary" id="btnSubmit">Get weather forecast</button>
+    <div class="container">
+        <div id="load"></div>
+    </div>
+</div>
+
+
+<div id="prikaz_prognoze">
+    <h2>Weather Forecast</h2>
+    <img id="imgWeatherIconUrl" />
+    <div class="row">
+        <div class="col-4">
+            <strong>City: </strong>
+            <span id="lblCity"></span>  ,
+            <span id="lblCountry"></span>
+        </div>
+        <div class="col-4">
+            <strong>Latitude: </strong>
+            <label id="lblLat"></label><br />
+        </div>
+        <div class="col-4">
+            <strong>Temperature: </strong> <label id="lblTemp"></label>&#8451;
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <strong>Description:</strong>
+            <label id="lblDescription"></label>
+        </div>
+        <div class="col-4">
+            <strong>Longitude: </strong>
+            <label id="lblLon"></label>
+        </div>
+        <div class="col-4">
+            <strong>Temperature (Max): </strong><label id="lblTempMax"></label>&#8451;
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <strong>Temperature (Feels Like): </strong><label id="lblTempFeelsLike"></label>&#8451;
+        </div>
+        <div class="col-4">
+            <strong>Humidity:</strong>
+            <label id="lblHumidity"></label>
+        </div>
+        <div class="col-4">
+            <strong>Temperature (Min): </strong><label id="lblTempMin"></label>&#8451;<br />
+        </div>
+
+    </div>
+</div>
+
+  
